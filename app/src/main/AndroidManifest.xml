@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoMySQLVolley">
         <activity
-            android:name=".confirmcustom"
+            android:name=".Setting_VAR"
             android:exported="true" />
         <activity
-            android:name=".acercade"
+            android:name=".Dto_productos"
+            android:exported="true" />
+        <activity
+            android:name=".Dto_categorias"
+            android:exported="true" />
+        <activity
+            android:name=".confirmcustom"
             android:exported="true" />
         <activity
             android:name=".pruebaVolly"

@@ -7,7 +7,7 @@
 
 
 
-    <color name="celeste">#DC2222</color>
+    <color name="rojo">#DC2222</color>
     <color name="lightgray">#ededed</color>
 
 
@@ -44,7 +44,7 @@
     <item name="textGrey1" type="color">#03A9F4</item>
     <item name="textGrey" type="color">#090909</item>
 
-    <color name="chovi3">#03A9F4</color>
+    <color name="celeste">#03A9F4</color>
     <color name="color_toolbar">#FFFEFE</color>
 
     <color name="colorToolBar">#266496</color>

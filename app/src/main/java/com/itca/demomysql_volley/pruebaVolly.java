@@ -68,8 +68,14 @@ public class pruebaVolly<pruebasVolly> extends AppCompatActivity {
 
             @Override
             public void onResponse(String response) {
+
+
                 System.out.println(response.substring(0,16));
+
                 textView.setText(response.substring(0,16));
+
+
+
             }
         },new Response.ErrorListener(){
 
@@ -85,7 +91,7 @@ public class pruebaVolly<pruebasVolly> extends AppCompatActivity {
     private void peticionJson(pruebaVolly Setting_Var){
         String url ="http://192.168.57.1/service2021/json1.php";
         String url1 = Setting_Var.URL_PRUEBA;
-        JsonObjectRequest jsonObjectRequest= new JsonObjectRequest(Request.Method.GET, url1, (String) null, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonObjectRequest= new JsonObjectRequest(Request.Method.GET, url1, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 textView.setText("Response: " + jsonObject.toString());

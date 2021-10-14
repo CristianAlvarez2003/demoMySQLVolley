@@ -4,9 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_margin="15dp"
     tools:context=".pruebaVolly">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/usuario" />
 
     <TextView
         android:id="@+id/tvRes"
@@ -14,12 +24,76 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:textSize="25dp"
-        android:text="Cadena de repuesta"/>
-    <Button
-        android:id="@+id/btnText"
+        android:textSize="30dp"
+        android:text="LOGIN INVENTARY"/>
+
+
+    <EditText
+        android:id="@+id/et_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Text HTTP"/>
+        android:hint="Introduzca el nombre del usuario"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:layout_margin="12dp"
+        android:inputType="textPersonName" />
 
+    <EditText
+        android:id="@+id/et_clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="12dp"
+        android:layout_marginTop="40dp"
+        android:hint="Introduzca su clave"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/celeste"
+        android:text="REGISTRATE"
+        android:textColor="@color/black"/>
+
+
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="¿Olvidastes la contraseña?" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp"
+            android:textColor="@color/rojo"
+            android:text="¿No tienes cuenta?" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:text="REGISTRATE"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
 </LinearLayout>
