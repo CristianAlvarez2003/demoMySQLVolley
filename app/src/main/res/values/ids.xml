@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ti_idcategoria" type="id" />
+    <item name="ti_namecategoria" type="id" />
+    <item name="et_idcategoria" type="id" />
+    <item name="et_namecategoria" type="id" />
+    <item name="sp_estado" type="id" />
+</resources>
